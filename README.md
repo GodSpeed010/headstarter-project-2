@@ -11,6 +11,8 @@ Lorem ipsum
 
 ### Dependencies
 * firebase 8.10.0
+* express
+* ejs
 * stripe
 
 ### Installing
