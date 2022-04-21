@@ -5,7 +5,12 @@ Original creators GitHub: https://github.com/WebDevSimplified
 
 ## Description
 
-Lorem ipsum
+This project is a Car Parts Commerce website that allows users to purchase different car parts.
+
+* Transactions are handled via **Stripe**
+* **Express** is used for server-side logic.
+* Store Car Parts and Merch are hosted on **Firebase**
+* 90% of the text on the About page was generated using **Machine Learning** using [InferKit](https://app.inferkit.com/demo).
 
 ## Getting Started
 
