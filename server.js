@@ -37,6 +37,7 @@ function fetchAllItems() {
         itemsRef.once('value').then(snapshot => {
             resolve(snapshot.val())
         }, error => {
+            console.log('firebase ERROR')
             reject(error)
         })
     })
@@ -59,6 +60,7 @@ app.get('/store', function (req, res) {
     fetchAllItems()
         .then(data => {
             if (data == null) {
+                console.log('No Data Found')
                 res.status(500).end()
             } else {
                 res.render('store.ejs', {
@@ -76,6 +78,7 @@ app.post('/purchase', function (req, res) {
     fetchAllItems()
         .then(data => {
             if (data == null) {
+                console.log('No Data Found')
                 res.status(500).end()
             } else {
                 const itemsJson = data
