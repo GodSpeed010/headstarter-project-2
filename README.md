@@ -3,6 +3,10 @@ Car Parts Commerce Website with Stripe transactions & Firebase Database
 
 Original creators GitHub: https://github.com/WebDevSimplified
 
+## Gif Walkthrough
+
+![gif](https://thumbs.gfycat.com/GranularEqualDiplodocus-size_restricted.gif)
+
 ## Description
 
 This project is a Car Parts Commerce website that allows users to purchase different car parts.
