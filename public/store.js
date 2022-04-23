@@ -44,7 +44,7 @@ var stripeHandler = StripeCheckout.configure({
             })
         }
 
-        fetch('/purchase', {
+        fetch('/purchase/store', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

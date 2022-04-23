@@ -42,7 +42,6 @@ function fetchAllItems() {
         })
     })
 }
-// fetchAllItems().then(data => console.log(data)) //! example code
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY
@@ -74,7 +73,15 @@ app.get('/store', function (req, res) {
         })
 })
 
-app.post('/purchase', function (req, res) {
+app.get('/', function(req, res) {
+    res.render(
+        'index.ejs', {
+            stripePublicKey: stripePublicKey
+        }
+    )
+})
+
+app.post('/purchase/store', function (req, res) {
     fetchAllItems()
         .then(data => {
             if (data == null) {
@@ -110,5 +117,22 @@ app.post('/purchase', function (req, res) {
         })
 })
 
+app.post('/purchase/ticket', function(req, res) {
+    console.log('/purchase/ticket')
+    
+    const ticketPrice = 10000
+
+    stripe.charges.create({
+        amount: ticketPrice,
+        source: req.body.stripeTokenId,
+        currency: 'usd'
+    }).then(function () {
+        console.log('CHARGE SUCCESSFUL')
+        res.json({ message: 'Successfully purchased ticket' })
+    }).catch(function () {
+        console.log("CHARGE FAILED")
+        res.status(500).end()
+    })
+})
 
 app.listen(3000)
