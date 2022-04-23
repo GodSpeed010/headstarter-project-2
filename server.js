@@ -117,9 +117,7 @@ app.post('/purchase/store', function (req, res) {
         })
 })
 
-app.post('/purchase/ticket', function(req, res) {
-    console.log('/purchase/ticket')
-    
+app.post('/purchase/ticket', function(req, res) {    
     const ticketPrice = 10000
 
     stripe.charges.create({
