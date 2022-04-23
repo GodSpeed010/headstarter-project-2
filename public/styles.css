@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 
 @font-face {
-    font-family: "Booter - Zero Zero";
+    font-family: 'Roboto Slab', serif;
+    src: url("Foots/Roboto Slab - Roboto Slab.woff") format("woff"),
+         url("Foots/Roboto Slab - Roboto Slab.woff");
+    /* font-family: "Booter - Zero Zero";
     src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");  */
+    font-size: 100px;
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +49,7 @@ html, body {
 }
 
 .main-nav li {
-    padding: 0 5%;
+    padding: 0 10%;
 }
 
 .nav a:hover {
@@ -53,16 +58,17 @@ html, body {
 
 .main-header {
     background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-image: url("Images/banner.jpeg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .band-name {
     text-align: center;
     margin: 0;
-    font-size: 4em;
+    font-size: 2em;
     font-family: "Booter - Zero Zero";
     font-weight: normal;
     color: white;
@@ -124,6 +130,7 @@ html, body {
 
 .btn {
     text-align: center;
+    align-items: center;
     vertical-align: middle;
     padding: .67em .67em;
     cursor: pointer;
