@@ -4,8 +4,7 @@ Car Parts Commerce Website with Stripe transactions & Firebase Database
 Original creators GitHub: https://github.com/WebDevSimplified
 
 ## Gif Walkthrough
-
-![gif](https://thumbs.gfycat.com/GranularEqualDiplodocus-size_restricted.gif)
+<img src="https://github.com/ahmad-hossain/Car-Parts-Commerce-Website/blob/main/walkthrough.gif"><br>
 
 ## Description
 
